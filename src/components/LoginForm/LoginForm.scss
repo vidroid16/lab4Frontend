@@ -1,0 +1,42 @@
+.login-form {
+    background-color: rgba(86, 214, 186, 0.534);
+    border-radius: 10px;
+    width: 220px;
+    height: 151px;
+    //position:fixed;
+    top: 30%;
+    left: calc(50% - 110px);
+    margin-top: 20px;
+    margin: 0 auto;
+    
+}
+input[type="button"]{
+    width: 85%;
+    margin-top: 10px;
+    background-color: rgba(198, 199, 212, 0.979);
+}
+@media only screen and (max-width: 228px){  
+    .login-form {
+        width: 100%;
+        height: 151px;
+        position:relative;
+        margin-top: 50px;
+        top: 0%;
+        left: 0%;
+    }
+}
+@media only screen and (max-width: 1075px)and (min-width: 818px){  
+    .login-form {
+        font-size: 2.9rem;
+        width: 300px;
+        height: 350px;
+        left: calc(50% - 150px);
+    }
+    input{
+        width: 80%;
+        height: 30px;
+    }input[type="button"]{
+        width: 80%;
+        height: 45px;
+    }
+}

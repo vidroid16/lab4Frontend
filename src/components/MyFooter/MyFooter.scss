@@ -1,0 +1,36 @@
+html{
+    min-height: 100%;
+    background: rgba(249, 246, 144, 0.61);
+}
+td{
+    text-align: left;
+    white-space: nowrap;
+}
+
+#info{
+    float: left;
+}
+
+#home_hat{
+    background: rgb(77,77,77);
+    padding: 1%;
+    overflow: hidden;
+    color: papayawhip;
+    height: 90px;
+
+}
+
+.bttn{
+    display:block;
+    background-color: rgba(86, 214, 186, 0.534) ;
+    border-radius: 10px;
+    float: right;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+@media only screen and (max-width: 818px){
+    #info{
+        font-size: 0.8rem;;
+    }
+}

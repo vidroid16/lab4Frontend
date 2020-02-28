@@ -1,0 +1,51 @@
+<section class="input-form">
+  <div id="table-grid-container">
+    <div id="table_container">
+        <div>
+            <form id="buttons" onsubmit="return false">
+                <div id="X" class="vars x-coord">
+                    X
+                    
+                    <label></label><input type="radio" name="xvue" value="-5">-5 </label>  
+                    <label></label><input type="radio" name="xvue" value="-4">-4 </label>  
+                    <label></label><input type="radio" name="xvue" value="-3">-3 </label>  
+                    <label></label><input type="radio" name="xvue" value="-2">-2 </label>  
+                    <label></label><input type="radio" name="xvue" value="-1">-1 </label>  
+                    <label></label><input type="radio" name="xvue" value="0">0 </label>  
+                    <label></label><input type="radio" name="xvue" value="1">1 </label>  
+                    <label></label><input type="radio" name="xvue" value="2">2 </label>  
+                    <label></label><input type="radio" name="xvue" value="3">3 </label>  
+                    <label></label><input type="radio" name="xvue" value="4">4 </label>  
+                        
+                </div>
+                <div class="vars">
+                    <div id="yField">
+                        <input type="text" maxlength="6" name="y" id="Y">
+                            
+                        </input>
+                        <span>Y</span>
+                    </div>
+                    <p:ajax update="ymsg" event="keyup"/>
+                    <h:message for="Y" id="ymsg" style="color: red; font-size: 15px; margin-left: 2%"/>
+                </div>
+                <div class="vars" id="R">
+                    R
+                    <label></label><input type="radio" name="rvue" disabled value="-5">-5 </label>  
+                    <label></label><input type="radio" name="rvue" disabled value="-4">-4 </label>  
+                    <label></label><input type="radio" name="rvue" disabled value="-3">-3 </label>  
+                    <label></label><input type="radio" name="rvue" disabled value="-2">-2 </label>  
+                    <label></label><input type="radio" name="rvue" disabled value="-1">-1 </label>  
+                    <label></label><input type="radio" name="rvue" disabled value="0">0 </label>  
+                    <label></label><input type="radio" name="rvue"  @click="redrawEmitR" value="1">1 </label>  
+                    <label></label><input type="radio" name="rvue"  @click="redrawEmitR" value="2">2 </label>  
+                    <label></label><input type="radio" name="rvue"  @click="redrawEmitR" value="3">3 </label>  
+                    <label></label><input type="radio" name="rvue"  @click="redrawEmitR" value="4">4 </label> 
+                </div>
+            </form>
+            <input type="button" id="go" value="Ну что народ, погнали!!!" style="width: 100%; height:3em" @click="check"/>
+        </div>
+        <!--<h:outputText id="historyJS" value="#{areacheckbean.historyJSON}" style="display: none"/>-->
+    </div>
+</div>
+</section>
+

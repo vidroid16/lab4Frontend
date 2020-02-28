@@ -1,0 +1,14 @@
+
+<section class="points-history">
+  <div id="rez-container">
+    <div id="result-box">
+        <div id="errvue" class="result_h"></div>
+        <div id="invalid_data" v-for="item in history.slice().reverse()" class="result_h">
+            {{'X='+item.x+', Y ='+item.y+', R ='+item.r+', '}}
+            {{item.isIn==="true" || item.in===true? 'Точка входит' : 'Точка не входит'}}
+        </div>
+      </div id="xyi">
+    </div>
+  </div>
+</section>
+

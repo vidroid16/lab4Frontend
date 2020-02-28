@@ -1,0 +1,10 @@
+
+<div :style="[isDisplayed ? 'display:none':'display:block']" class="login-form">
+  <div> Логин:<input v-model="login" type="text"/></div>
+  <div>Пароль:<input v-model="password" type="password" /></div>
+  <input type="button" value="Войти" @click="validateForm"/>
+  <div v-if="isError" id="errorMessege">
+    {{messageError}}
+  </div>
+</div>
+
